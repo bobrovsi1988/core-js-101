@@ -556,7 +556,11 @@ function distinct(arr) {
  *    "Poland" => ["Lodz"]
  *   }
  */
-function group(/* array, keySelector, valueSelector */) {
+function group(array, keySelector, valueSelector) {
+  const res = array.filter((value, index, self) => self.indexOf(keySelector(value)) === index);
+  let ab = array.filter((value, index, self) => self.indexOf(valueSelector(value)) === index);
+  if (ab) ab = 10;
+  return res;
 }
 
 
