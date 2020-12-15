@@ -60,12 +60,13 @@ function willYouMarryMe(isPositiveAnswer) {
  *    })
  *
  */
-function processAllPromises(array) {
-  const arr = [];
-  for (let i = 1; i <= array.length; i += 1) {
-    arr.push(i);
-  }
-  return Promise.resolve(arr);
+function processAllPromises(/* array */) {
+  throw new Error('Not implemented');
+  // const arr = [];
+  // for (let i = 1; i <= array.length; i += 1) {
+  //   arr.push(i);
+  // }
+  // return Promise.resolve(arr);
 }
 
 /**
@@ -109,7 +110,7 @@ function getFastestPromise(/* array */) {
  *
  */
 function chainPromises(/* array, action */) {
-  return 2;
+  throw new Error('Not implemented');
 }
 
 module.exports = {
